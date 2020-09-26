@@ -1,7 +1,12 @@
 .main-content {
+    display: flex;
+    align-items: center;
     max-width: 800px;
+    min-height: 100vh;
     margin: 0 auto;
-    padding-top: 180px;
+}
+.main-content__vn {
+    width: 100%;
 }
 .main-content img {
     max-width: 25px;
@@ -21,4 +26,25 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 540px) {
+    .main-content h1 {
+        font-size: 32px;
+    }
+    .main-desc {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 40px;
+    }
+    .animation-button .name {
+        font-size: 32px;
+    }
+    .main-nav {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .animation-button {
+        margin: 0 20px;
+    }
 }
