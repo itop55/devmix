@@ -1,0 +1,24 @@
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+.main-content img {
+    max-width: 25px;
+    margin-bottom: -4px;
+}
+.main-content h1 {
+    font-weight: 900;
+    font-size: 45px;
+}
+.main-desc {
+    font-size: 22px;
+    line-height: 35px;
+    color: #333;
+    margin-top: 50px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
