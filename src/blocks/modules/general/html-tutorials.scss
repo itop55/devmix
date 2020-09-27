@@ -1,0 +1,26 @@
+.html-page-case {
+    position: relative;
+    width: 100%;
+}
+.html-tutorials {
+    background-color: #42444e;
+}
+.html-tutorials-vn {
+    overflow: hidden;
+}
+@media screen and (min-width: 801px) {
+    .html-page-case {
+        display: flex;
+    }
+}
+@media screen and (max-width: 800px) {
+    .html-page-case {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        transition: transform 300ms ease-in-out;
+    }
+    .nav-open .html-page-case {
+        transform: translate3d(70%,0,0);
+    }
+}

@@ -1,0 +1,117 @@
+.page-content {
+    background: #fff url(../../../../img/page-content-bg.png) 676px -3px no-repeat;
+    background-size: auto 75%;
+    padding-left: 2.14rem;
+    padding-right: 2.14rem;
+    position: relative;
+}
+.page-content__header {
+    padding-top: 2.14rem;
+    text-align: center;
+    h3 {
+        font-weight: 300;
+        color: #9799a7;
+    }
+    h1 {
+        margin-bottom: .42rem;
+    }
+}
+.course__items {
+    li {
+        counter-increment: lesson;
+        margin-bottom: .85rem;
+        padding-left: 2.85rem;
+    }
+    a {
+        display: inline-block;
+        border-bottom: 0;
+        padding: 0;
+        color: #666;
+        &::before {
+            border-radius: 50%;
+            content: counter(lesson);
+            font-size: .92rem;
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            margin: -.14rem .71rem .071rem -2.85rem;
+            padding-top: .07rem;
+            text-align: center;
+            font-weight: 300;
+            transition: all .15s linear;
+            float: left;
+            background-color: #cecfd5;
+            color: #fff;
+        }
+        &:hover {
+            color: #ff7b29;
+            &::before {
+                background-color: #9799a7;
+            }
+        }
+    }
+}
+.course-btn {
+    text-align: center;
+    margin-bottom: 1.71rem;
+    margin-top: 1rem;
+}
+.btn-alt {
+    background-color: #0087cc;
+}
+.page-group {
+    display: flex;
+    justify-content: space-between;
+}
+.course__items-2 {
+    counter-reset: lesson 6;
+}
+
+@media screen and (min-width: 1670px) {
+    .page-content {
+        background-position: 100% -3px;
+    }
+}
+@media screen and (max-width: 1669px) and (min-width: 1400px) {
+    .page-content {
+        background-position: 836px -3px;
+    }
+}
+@media screen and (max-width: 1399px) and (min-width: 801px) {
+    .page-content {
+        background-position: 750px -3px;
+    }
+}
+@media screen and (min-width: 801px) {
+    .page-content {
+        flex: 1 1 auto;
+        min-height: 1850px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .page-content {
+        min-height: 100vh;
+    }
+}
+@media screen and (min-width: 540px) {
+    .course__items:first-child {
+        padding-right: 1.07rem;
+    }
+    .course__items:last-child {
+        padding-left: 1.07rem;
+    }
+}
+@media screen and (max-width: 539px) {
+    .page-group {
+        flex-direction: column;
+    }
+    .course__items ol {
+        margin-bottom: .85rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    .page-content {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}

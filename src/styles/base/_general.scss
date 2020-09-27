@@ -1,7 +1,13 @@
 html {
+    color: #666;
     box-sizing: border-box;
     scroll-behavior: smooth;
     -ms-overflow-style: scrollbar;
+    font-size: 87.5%;
+    line-height: 1.5rem;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    transition: all .25s linear;
 }
 body, html {
     margin: 0;
@@ -12,14 +18,32 @@ body, html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-
-h1, h2, h3, h4, h5, h6, ul {
+body, h1, h2, h3, h4, h5, h6, p, ul, button, input, select, textarea, ul, ol, figure {
     margin: 0;
-    padding: 0;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    font-weight: 600;
+}
+h1, h2, b, strong, h1 a, h2 a {
+    color: #42444e;
+}
+h1 {
+    padding: 0;
+    font-size: 2.57rem;
+    line-height: 3rem;
+}
+h3 {
+    font-size: 1.28rem;
+}
+h1, h2, h3, h4, h5, p, ul, ol, figure {
+    margin-bottom: 1.71rem;
+}
+a:active, a:hover {
+    outline: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -49,7 +73,51 @@ body {
     padding-right: 15px;
     margin: 0 auto;
 }
-
 .green-color {
     color: #00e6af;
+}
+.page-case>* {
+    max-width: 42.85rem;
+}
+.btn {
+    border: 0;
+    padding: .85rem 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    transition: all .15s linear;
+    border-radius: .42rem;
+    display: inline-block;
+    color: #fff;
+}
+.btn:focus, .btn:active, .btn:hover {
+    background-color: #ff7b29;
+}
+.label-new {
+    border-radius: 3px;
+    left: .14rem;
+    padding: .14rem .35rem;
+    top: -.07rem;
+    font-size: .78rem;
+    line-height: 1.28rem;
+    font-weight: 600;
+    position: relative;
+    background-color: #2db34a;
+    color: #fff;
+}
+.footer {
+    background: #eaeaed;
+    margin: 1.71rem -2.14rem 0;
+    font-size: .85rem;
+    line-height: 1.28rem;
+    padding: 1.71rem 2.14rem 1.71rem 2.14rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 100%;
+        line-height: 1.68rem;
+    }
 }
