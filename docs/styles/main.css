@@ -813,8 +813,12 @@ body {
 
   .sidebar__logo {
     line-height: 2.14rem;
-    margin-top: 1.21rem;
-    margin-bottom: 2.35rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sidebar__logo img {
+    width: 100%;
   }
 }
 
