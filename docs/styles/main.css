@@ -955,6 +955,7 @@ body {
 
   .sidebar__logo img {
     height: 40px;
+    width: auto;
   }
 
   .nav-open .sidebar__content-vn {
@@ -988,6 +989,10 @@ body {
   .main-nav {
     margin-right: -10px;
     margin-left: -10px;
+  }
+
+  .main-content__vn {
+    padding: 3rem 0;
   }
 }
 
