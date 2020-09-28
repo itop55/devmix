@@ -60,7 +60,7 @@
 .main-content h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 3rem;
   color: #ffffff;
 }
 
@@ -203,6 +203,10 @@
   font-size: 2.14rem;
 }
 
+.sidebar__logo img {
+  width: 100%;
+}
+
 .sidebar__content-vn {
   padding-left: 2.14rem;
   padding-right: 2.14rem;
@@ -301,29 +305,6 @@
 .animation-button .white {
   background-color: white;
   z-index: 8;
-}
-
-.animation-button:hover {
-  -webkit-box-shadow: 0px 0px 20px 9px #395a53;
-  box-shadow: 0px 0px 20px 9px #395a53;
-}
-
-.animation-button:hover .green-dark {
-  -webkit-transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
-  -moz-transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
-  transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
-}
-
-.animation-button:hover .green {
-  -webkit-transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
-  -moz-transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
-  transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
-}
-
-.animation-button:hover .white {
-  -webkit-transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
-  -moz-transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
-  transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
 }
 
 html {
@@ -855,8 +836,27 @@ body {
     margin-bottom: 2.5rem;
   }
 
-  .sidebar__logo img {
-    width: 100%;
+  .animation-button:hover {
+    -webkit-box-shadow: 0px 0px 20px 9px #395a53;
+    box-shadow: 0px 0px 20px 9px #395a53;
+  }
+
+  .animation-button:hover .green-dark {
+    -webkit-transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
+    -moz-transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
+    transform: translate3d(-25px, -35px, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  .animation-button:hover .green {
+    -webkit-transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
+    -moz-transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
+    transform: translate3d(-15px, -18px, 0) rotate3d(0, 0, 1, 1deg);
+  }
+
+  .animation-button:hover .white {
+    -webkit-transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
+    -moz-transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5px, -5px, 0) rotate3d(0, 0, 1, -1deg);
   }
 }
 
@@ -874,6 +874,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .main-content h1 {
+    line-height: 4rem;
+  }
+
   .html-page-case {
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
@@ -901,6 +905,7 @@ body {
 
   .sidebar-nav-btn {
     display: block;
+    left: 15px;
   }
 
   .sidebar__content {
@@ -933,8 +938,7 @@ body {
     font-size: 1.14rem;
     line-height: 1.71rem;
     margin: 0;
-    padding-bottom: .42rem;
-    padding-top: .42rem;
+    padding: .8rem 1.1rem;
   }
 
   .sidebar__logo span {
@@ -947,6 +951,10 @@ body {
 
   .sidebar__logo span:last-child {
     font-size: 1.14rem;
+  }
+
+  .sidebar__logo img {
+    height: 40px;
   }
 
   .nav-open .sidebar__content-vn {
@@ -968,17 +976,18 @@ body {
     margin-top: 40px;
   }
 
+  .animation-button {
+    height: 110px;
+    margin: 0 10px;
+  }
+
   .animation-button .name {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .main-nav {
     margin-right: -10px;
     margin-left: -10px;
-  }
-
-  .animation-button {
-    margin: 0 20px;
   }
 }
 
@@ -998,10 +1007,28 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .animation-text {
+    line-height: 3.5rem;
+  }
+
+  .anim-typing {
+    padding: 0 .7rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .page-content {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .sidebar__logo img {
+    height: 35px;
   }
 }
 

@@ -10,6 +10,9 @@
     span:last-child {
         font-size: 2.14rem;
     }
+    img {
+        width: 100%;
+    }
 }
 .sidebar__content-vn {
     padding-left: 2.14rem;
@@ -52,14 +55,12 @@
         line-height: 2.14rem;
         margin-top: 2.3rem;
         margin-bottom: 2.5rem;
-        img {
-            width: 100%;
-        }
     }
 }
 @media screen and (max-width: 800px) {
     .sidebar-nav-btn {
         display: block;
+        left: 15px;
     }
     .sidebar__content {
         position: absolute;
@@ -80,8 +81,7 @@
         font-size: 1.14rem;
         line-height: 1.71rem;
         margin: 0;
-        padding-bottom: .42rem;
-        padding-top: .42rem;
+        padding: .8rem 1.1rem;
         span {
             display: block;
         }
@@ -91,9 +91,19 @@
         span:last-child {
             font-size: 1.14rem;
         }
+        img {
+            height: 40px;
+        }
     }
     .nav-open .sidebar__content-vn {
         opacity: 1;
         transform: scale3d(1, 1, 1);
+    }
+}
+@media screen and (max-width: 340px) {
+    .sidebar__logo {
+        img {
+            height: 35px;
+        }
     }
 }
