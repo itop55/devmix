@@ -3,8 +3,10 @@ class AnimationText {
         this.id = document.getElementById(id);
         this.list = list;
         this.duration = duration;
-        this.draw(0)
-        this.drawMouse()
+        if(this.id ) {
+            this.draw(0)
+            this.drawMouse()
+        }
     }
 
     drawMouse() {
