@@ -14,8 +14,10 @@
 function toggleMainMenu() {
     var bodyElem = document.querySelector('body');
     var navBtn = bodyElem.querySelector('.sidebar-nav-btn');
-    navBtn.onclick = function () {
-        bodyElem.classList.toggle('nav-open')
+    if(navBtn) {
+        navBtn.onclick = function () {
+            bodyElem.classList.toggle('nav-open')
+        }
     }
 }
 

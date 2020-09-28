@@ -114,6 +114,24 @@ body {
     bottom: 0;
     width: 100%;
 }
+.animation-text {
+    border-bottom: 5px solid #00c092;
+    width: max-content;
+    position: relative;
+}
+.animation-text:after {
+    content: '|';
+    position: absolute;
+    right: -12px;
+    font-size: inherit;
+    color: #fff;
+    font-weight: 900;
+    transition: .5s;
+}
+
+.animation-text.active:after {
+    color: transparent;
+}
 
 @media screen and (min-width: 1400px) {
     html {

@@ -17,6 +17,19 @@
   left: 0;
 }
 
+.logo-br {
+  border-bottom: 5px solid #00c092;
+}
+
+.anim-typing {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 0 2.7rem;
+  margin-top: 3rem;
+}
+
 .main-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -246,6 +259,7 @@
   text-transform: uppercase;
   text-align: center;
   color: white;
+  margin-bottom: 0;
 }
 
 .animation-button .button {
@@ -773,6 +787,30 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.animation-text {
+  border-bottom: 5px solid #00c092;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+.animation-text:after {
+  content: '|';
+  position: absolute;
+  right: -12px;
+  font-size: inherit;
+  color: #fff;
+  font-weight: 900;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+
+.animation-text.active:after {
+  color: transparent;
 }
 
 @media screen and (min-width: 540px) {
