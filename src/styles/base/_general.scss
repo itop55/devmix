@@ -41,6 +41,16 @@ h3 {
 h1, h2, h3, h4, h5, p, ul, ol, figure {
     margin-bottom: 1.71rem;
 }
+h6 {
+    color: #9799a7;
+    font-size: 1rem;
+}
+code {
+    color: #ff7b29;
+}
+img {
+    width: 100%;
+}
 a:active, a:hover {
     outline: 0;
 }
@@ -131,6 +141,17 @@ body {
 
 .animation-text.active:after {
     color: transparent;
+}
+.txt-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.txt-left-br {
+    border-left: 3px solid #2db34a;
+    padding: 1rem;
+}
+.pos-rel {
+    position: relative;
 }
 
 @media screen and (min-width: 1400px) {

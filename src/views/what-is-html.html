@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
+@@include("../blocks/modules/head/head.html", {
+"title" : "Devmix - Что такое HTML?"
+})
+<body class="html-tutorials">
+<div class="html-tutorials-vn">
+    <div class="html-page-case">
+        @@include("../blocks/modules/html-page/sidebar/sidebar.html")
+        @@include("../blocks/modules/html-page/lesson_1/content.html")
+    </div>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

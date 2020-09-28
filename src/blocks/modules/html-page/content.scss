@@ -1,18 +1,29 @@
 .page-content {
-    background: #fff url(../../../../img/page-content-bg.png) 676px -3px no-repeat;
+    background: #fff url(../../../img/page-content-bg.png) 676px -3px no-repeat;
     background-size: auto 75%;
     position: relative;
-    padding: 2.14rem 2.14rem 0 2.14rem;
+    padding: 2.14rem 2.14rem 4.64rem 2.14rem;
+}
+.page-content.lesson-content {
+    background: #fff;
+}
+.page-content:not(.lesson-content) .page-content__header {
+    text-align: center;
+    h1 {
+        margin-bottom: .42rem;
+    }
 }
 .page-content__header {
-    text-align: center;
     h3 {
         font-weight: 300;
         color: #9799a7;
     }
-    h1 {
-        margin-bottom: .42rem;
-    }
+}
+.lesson-subtitle {
+    color: #2db34a;
+}
+.green-border {
+    border-bottom: 1px solid #2db34a;
 }
 .course__items {
     li {
@@ -64,10 +75,58 @@
 .course__items-2 {
     counter-reset: lesson 6;
 }
+.lesson-content img {
+    margin: 2rem 0;
+}
+.toc {
+    border: .071rem solid #cecfd5;
+    padding: 2.07rem 2.14rem .35rem;
+    margin-bottom: 1.71rem;
+    border-radius: .42rem;
+    h4 {
+        color: #2db34a;
+        font-size: 1.23rem;
+    }
+    a {
+        color: #0087cc;
+        border-bottom: .071rem solid #cecfd5;
+        padding-bottom: .071rem;
+    }
+    ul {
+        padding-left: 1.07rem;
+        color: #cecfd5;
+        list-style: square;
+    }
+    h6 {
+        margin-bottom: .42rem;
+    }
+}
+.toc-number {
+    border-radius: 50%;
+    width: 4.28rem;
+    height: 4.28rem;
+    line-height: 4.28rem;
+    margin: .42rem -3.21rem 0 0;
+    font-size: 1.71rem;
+    text-align: center;
+    font-weight: 300;
+    float: right;
+    background-color: #cecfd5;
+    color: #fff;
+}
 
 @media screen and (min-width: 1670px) {
     .page-content {
         background-position: 100% -3px;
+    }
+}
+@media screen and (min-width: 1220px) {
+    .pop-out {
+        position: absolute;
+        top: 0;
+        right: -2.14rem;
+        width: 18.57rem;
+        transform: translateX(100%);
     }
 }
 @media screen and (max-width: 1669px) and (min-width: 1400px) {
@@ -78,6 +137,15 @@
 @media screen and (max-width: 1399px) and (min-width: 801px) {
     .page-content {
         background-position: 750px -3px;
+    }
+}
+@media screen and (max-width: 1219px) and (min-width: 560px) {
+    .pop-out {
+        float: right;
+        margin-left: 2.14rem;
+        position: relative;
+        z-index: 1;
+        width: 18.57rem;
     }
 }
 @media screen and (min-width: 801px) {
