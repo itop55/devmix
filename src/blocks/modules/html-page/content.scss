@@ -78,7 +78,7 @@
 .lesson-content img {
     margin: 2rem 0;
 }
-.toc {
+.content-menu__nav {
     border: .071rem solid #cecfd5;
     padding: 2.07rem 2.14rem .35rem;
     margin-bottom: 1.71rem;
@@ -101,7 +101,7 @@
         margin-bottom: .42rem;
     }
 }
-.toc-number {
+.content-menu__nav-number {
     border-radius: 50%;
     width: 4.28rem;
     height: 4.28rem;
@@ -114,6 +114,49 @@
     background-color: #cecfd5;
     color: #fff;
 }
+.page-case>.code-case {
+    max-width: none;
+}
+.code-case {
+    position: relative;
+    color: #666;
+    background: #eaeaed;
+    margin: 0 -2.14rem 1.71rem;
+    overflow-y: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        background: linear-gradient(to right,rgba(66,68,78,0),#eaeaed);
+        top: 0;
+        right: 0;
+        width: 2.14rem;
+        height: 100%;
+    }
+}
+.code-case .nt, .code-case .nc, .code-case .nf, .code-case .no, .code-case .nn, .code-case .cp, .code-case .kd, .code-case .kc {
+    color: #ff7b29;
+}
+.code-case .na, .code-case .nl, .code-case .k {
+    color: #0087cc;
+}
+.code-case .s, .code-case .sx, .code-case .m, .code-case .s2, .code-case .ss, .code-case .kp, .code-case .s1, .code-case .mh, .code-case .mi {
+    color: #2db34a;
+}
+.code-case__number {
+    color: #9799a7;
+    text-align: right;
+    padding: 1.71rem 2.14rem;
+    background-color: #cecfd5;
+    p {
+        margin-bottom: 0;
+    }
+}
+.code-case__code {
+    padding: 1.71rem 4.28rem 1.71rem 2.14rem;
+    p {
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (min-width: 1670px) {
     .page-content {
@@ -121,7 +164,7 @@
     }
 }
 @media screen and (min-width: 1220px) {
-    .pop-out {
+    .content-menu {
         position: absolute;
         top: 0;
         right: -2.14rem;
@@ -140,7 +183,7 @@
     }
 }
 @media screen and (max-width: 1219px) and (min-width: 560px) {
-    .pop-out {
+    .content-menu {
         float: right;
         margin-left: 2.14rem;
         position: relative;
@@ -179,5 +222,8 @@
     .page-content {
         padding-left: 1.1rem;
         padding-right: 1.1rem;
+    }
+    .footer {
+        width: calc(100% + 1.1rem);
     }
 }
