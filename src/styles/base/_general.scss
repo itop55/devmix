@@ -58,6 +58,22 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+pre {
+    overflow: auto;
+    font-size: 1rem;
+    margin: 0;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
 .txt-upp {
     text-transform: uppercase;
 }
@@ -153,6 +169,10 @@ body {
 .pos-rel {
     position: relative;
 }
+.d-flex {
+    display: flex;
+}
+
 
 @media screen and (min-width: 1400px) {
     html {
