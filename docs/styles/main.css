@@ -243,7 +243,7 @@
   color: #fff;
 }
 
-.page-case > .code-case {
+.page-case > .code-case__full {
   max-width: none;
 }
 
@@ -267,7 +267,7 @@
   height: 100%;
 }
 
-.code-case .nt,
+.code-nt,
 .code-case .nc,
 .code-case .nf,
 .code-case .no,
@@ -278,13 +278,13 @@
   color: #ff7b29;
 }
 
-.code-case .na,
+.code-na,
 .code-case .nl,
 .code-case .k {
   color: #0087cc;
 }
 
-.code-case .s,
+.code-s,
 .code-case .sx,
 .code-case .m,
 .code-case .s2,
@@ -313,6 +313,34 @@
 
 .code-case__code p {
   margin-bottom: 0;
+}
+
+.practice {
+  counter-reset: lesson;
+  list-style: none;
+  margin: 0 0 1.71rem 0;
+  padding: 0;
+}
+
+.practice li {
+  counter-increment: practice;
+  margin-left: 3.28rem;
+}
+
+.practice li::before {
+  content: counter(practice);
+  border-radius: 50%;
+  width: 2rem;
+  font-size: .92rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: -.21rem .71rem .071rem -2.85rem;
+  padding-top: .071rem;
+  text-align: center;
+  font-weight: 300;
+  float: left;
+  background-color: #cecfd5;
+  color: #fff;
 }
 
 .sidebar__logo {
@@ -978,6 +1006,15 @@ tbody {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mx-w90 {
+  max-width: 90%;
+}
+
+.code-black {
+  font-weight: bold;
+  color: #42444e;
 }
 
 @media screen and (min-width: 540px) {
