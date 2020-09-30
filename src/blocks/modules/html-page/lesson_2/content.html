@@ -1,0 +1,93 @@
+<section class="page-content lesson-content">
+    <div class="page-content__case">
+        <section class="page-case">
+            <header class="page-content__header">
+                <h6 class="page-content__lesson">Урок 2</h6>
+                <h1>Структура HTML-страницы</h1>
+            </header>
+        </section>
+        <article class="lesson pos-rel page-case">
+            <div class="pos-rel">
+                <div class="content-menu">
+                    <nav class="content-menu__nav ">
+                        <h4>В этом уроке <span class="content-menu__nav-number">2</span></h4>
+                        <h6>HTML</h6>
+                        <ul>
+                            <li><a href="#str-doctype">DOCTYPE</a></li>
+                            <li><a href="#str-html">html</a></li>
+                            <li><a href="#str-head">head</a></li>
+                            <li><a href="#str-meta">meta</a></li>
+                            <li><a href="#str-title">title</a></li>
+                            <li><a href="#str-body">body</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <p><strong>Базовая структура</strong> HTML страницы, для любого сайта:</p>
+<div class="d-flex highlight code-case">
+    <div class="code-case__number">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+<div class="code-case__code">
+<pre>
+<span class="cp">&lt;!DOCTYPE</span> <span class="code-s">html</span><span class="cp">&gt;</span>
+<span class="code-nt">&lt;html&gt;</span>
+  <span class="code-nt">&lt;head&gt;</span>
+    <span class="code-nt">&lt;meta</span> <span class="code-na">charset=</span><span class="code-s">"UTF-8"</span><span class="code-nt">&gt;</span>
+    <span class="code-nt">&lt;title&gt;</span>Мой первый сайт<span class="code-nt">&lt;/title&gt;</span>
+  <span class="code-nt">&lt;/head&gt;</span>
+  <span class="code-nt">&lt;body&gt;</span>
+    Содержимое моего сайта
+  <span class="code-nt">&lt;/body&gt;</span>
+<span class="code-nt">&lt;/html&gt;</span>
+</pre>
+</div>
+</div>
+            <ol class="practice">
+                <li id="str-doctype">
+                    <p><code>&lt;!DOCTYPE <span class="code-s">html</span>&gt;</code> - (доктайп) указывает тип документа. Так мы говорим браузеру, что это html страница</p>
+                </li>
+                <li id="str-html">
+                    <p><code>&lt;html&gt;...&lt;/html&gt;</code> - открывающий тег <code class="code-black">&lt;html&gt;</code> задает начало страницы, а закрывающий <code class="code-black">&lt;/html&gt;</code> соответственно конец.
+                        Все остальное (теги, текст, картинки, видео и т.д) помещаеться между этим тегом.
+                        В документе должен быть только один тег <code class="code-black">&lt;html&gt;...&lt;/html&gt;</code>
+                </li>
+                <li id="str-head">
+                    <p><code>&lt;head&gt;...&lt;/head&gt;</code> - тег для размещения служебной информации для браузера. Здесь задаем название сайта, указываем кодировку страницы, при необходимости подключаем файл стилей</p>
+                </li>
+                <li id="str-meta">
+                    <p><span class="code-nt">&lt;meta</span> <span class="code-na">charset=</span><span class="code-s">"UTF-8"</span><span class="code-nt">&gt;</span> -
+                    тег который сообщает браузеру, что символы в данном документе закодированы в соответствии с кодировкой <strong>UTF-8</strong></p>
+                </li>
+                <li id="str-title">
+                    <p class="mb-0"><span class="code-nt">&lt;title&gt;</span>Мой первый сайт<span class="code-nt">&lt;/title&gt;</span> - здесь указваем название сайта, которое будет выводиться во вкладке браузера, как показано ниже:</p>
+                    <img class="mx-w90" src="img/title.png" alt="title">
+                </li>
+                <li id="str-body">
+                    <p><code>&lt;body&gt;...&lt;/body&gt;</code> - тег, в котором размещается все содержимое сайта(текст, картинки, видео, таблицы, списки и т.д.)
+                        Все, что находится между тегами <span class="code-nt">&lt;body&gt;</span> и <span class="code-nt">&lt;/body&gt;</span>
+                        будет выводиться браузером на экран.</p>
+                </li>
+            </ol>
+            <p>Выше мы перечислили шесть основных тегов HTML, их нельзя дублировать и они должны быть в правильном порядке, как показано в примере.</p>
+<!--            <p>Обычно HTML страница состоит из <strong>трех</strong> основных частей:</p>
+            <p><strong>1. Header</strong> - Верхняя часть сайта . Заголовок содержит контент, относящийся ко всем страницам вашего сайта, например логотип или название веб-сайта, а также систему навигации. Заголовок виден на каждой странице.</p>
+            <p><strong>2. Main</strong> - Основная часть. Занимает самую большую часть веб-страницы. Он содержит контент, специфичный для просматриваемой страницы.</p>
+            <p><strong>3. Footer</strong> - Нижняя часть. Содержимое нижнего колонтитула обычно включает контактную информацию, адрес доставки или юридические уведомления. Как и верхний колонтитул, нижний колонтитул появляется на каждой странице, но располагается внизу.</p>-->
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer-vn">
+            <small>© Devmix</small>
+        </div>
+    </footer>
+</section>
