@@ -976,6 +976,10 @@ tbody {
   display: flex;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 540px) {
   .course__items:first-child {
     padding-right: 1.07rem;
