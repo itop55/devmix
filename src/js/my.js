@@ -25,3 +25,22 @@ function toggleMainMenu() {
 document.addEventListener('DOMContentLoaded', function() {
     toggleMainMenu()
 }, false);
+
+//Поиск при нажатии enter в input
+(function() {
+    var allSearchInput = document.querySelectorAll('input[type=search]');
+    var searchStr;
+    if(allSearchInput.length) {
+        for(var i=0; i<allSearchInput.length; i++) {
+            allSearchInput[i].addEventListener('keydown', function (e) {
+                if (e.keyCode === 13) {
+                    searchStr = this.value.replace(/ /g, '%20');
+                    if(searchStr.length) {
+                        document.location.href = "https://yandex.ru/search/?text=" + searchStr;
+                        searchStr.length = '';
+                    }
+                }
+            })
+        }
+    }
+})();
