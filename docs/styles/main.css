@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .main-page {
   background: url(../img/main-bg.jpg) center center/cover no-repeat;
 }
@@ -255,18 +257,6 @@
   overflow-y: hidden;
 }
 
-.code-case::after {
-  content: "";
-  position: absolute;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(66, 68, 78, 0)), to(#eaeaed));
-  background: -moz-linear-gradient(left, rgba(66, 68, 78, 0), #eaeaed);
-  background: linear-gradient(to right, rgba(66, 68, 78, 0), #eaeaed);
-  top: 0;
-  right: 0;
-  width: 2.14rem;
-  height: 100%;
-}
-
 .code-nt,
 .code-case .nc,
 .code-case .nf,
@@ -341,6 +331,67 @@
   float: left;
   background-color: #cecfd5;
   color: #fff;
+}
+
+.code-cont {
+  border: 1px solid #cecfd5;
+  border-radius: 0 10px 10px 10px;
+  padding: 0.71rem 1.14rem 1rem 1.14rem;
+}
+
+.code-search {
+  border: 1px solid #cecfd5;
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+.code-res {
+  margin-top: 4rem;
+  margin-bottom: 1.71rem;
+  position: relative;
+}
+
+.code-res::after {
+  content: url(../img/chrome.svg);
+  display: block;
+  position: absolute;
+  z-index: 4;
+  top: -22px;
+  left: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.code-res::before {
+  content: "Мой сайт";
+  position: absolute;
+  z-index: 2;
+  top: -29px;
+  left: 0;
+  font-size: .85rem;
+  padding-left: 35px;
+  padding-top: 0.2rem;
+  width: 150px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cecfd5;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.code-res__vn {
+  margin-top: 1.3rem;
+}
+
+.code-res h6 {
+  color: #666;
+  font-size: 0.67rem;
+}
+
+.content-menu code {
+  color: inherit;
 }
 
 .sidebar__logo {
@@ -1015,6 +1066,13 @@ tbody {
 .code-black {
   font-weight: bold;
   color: #42444e;
+}
+
+.code-green {
+  background-color: #2db34a;
+  padding: 0.25rem 0.71rem 0.35rem;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 540px) {

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Devmix - HTML теги для работы с текстом</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="yandex-verification" content="27ed8aacfe2489f1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="html-tutorials">
+<div class="html-tutorials-vn">
+    <div class="html-page-case">
+        <aside class="sidebar">
+    <header class="sidebar__header" role="banner">
+        <h1 class="sidebar__logo">
+            <a href="html-tutorials.html">
+                <img src="img/logo.svg" alt="logotip">
+            </a>
+        </h1>
+        <span class="sidebar-nav-btn"></span>
+    </header>
+    <div class="sidebar__content">
+        <div class="sidebar__content-vn">
+            <nav class="sidebar__nav" role="navigation">
+                <ul>
+                    <li class="building-your-first-web-page">
+                        <a href="what-is-html.html">
+                            <strong>Урок 1</strong>
+                            Что такое HTML?
+                        </a>
+                    </li>
+                    <li class="getting-to-know-html">
+                        <a href="html-page-structure.html">
+                            <strong>Урок 2</strong>
+                            Структура HTML страницы
+                        </a>
+                    </li>
+                    <li class="getting-to-know-css">
+                        <a href="tags-for-text.html">
+                            <strong>Урок 3</strong>
+                            Теги для работы с текстом
+                        </a>
+                    </li>
+                    <li class="opening-the-box-model">
+                        <a href="#">
+                            <strong>Урок 4</strong>
+                            Открытие модели коробки
+                        </a>
+                    </li>
+                    <li class="positioning-content">
+                        <a href="#">
+                            <strong>Урок 5</strong>
+                            Позиционирование контента Новое
+                            <span class="label-new">New</span>
+                        </a>
+                    </li>
+                    <li class="working-with-typography">
+                        <a href="#">
+                            <strong>Урок 6</strong>
+                            Работа с типографикой
+                        </a>
+                    </li>
+                    <li class="setting-backgrounds-and-gradients">
+                        <a href="#">
+                            <strong>Урок 7</strong>
+                            Установка фона и градиентов
+                        </a>
+                    </li>
+                    <li class="creating-lists">
+                        <a href="#">
+                            <strong>Урок 8</strong>
+                            Создание списков
+                        </a>
+                    </li>
+                    <li class="adding-media">
+                        <a href="#">
+                            <strong>Урок 9</strong>
+                            Добавление медиа
+                        </a>
+                    </li>
+                    <li class="building-forms">
+                        <a href="#">
+                            <strong>Урок 10</strong>
+                            Строительные формы
+                        </a>
+                    </li>
+                    <li class="organizing-data-with-tables">
+                        <a href="#">
+                            <strong>Урок 11</strong>
+                            Организация данных с помощью таблиц
+                        </a>
+                    </li>
+                    <li class="writing-your-best-code">
+                        <a href="#">
+                            <strong>Урок 12</strong>
+                            Написание вашего лучшего кода
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</aside>
+        <section class="page-content lesson-content">
+    <div class="page-content__case">
+        <section class="page-case">
+            <header class="page-content__header">
+                <h6 class="page-content__lesson">Урок 3</h6>
+                <h1>HTML теги для работы с текстом</h1>
+            </header>
+        </section>
+        <article class="lesson pos-rel page-case">
+            <div class="pos-rel">
+                <div class="content-menu">
+                    <nav class="content-menu__nav ">
+                        <h4>В этом уроке <span class="content-menu__nav-number">3</span></h4>
+                        <h6>HTML</h6>
+                        <ul>
+                            <li><a href="#tag-p"><code>&lt;p&gt;</code></a></li>
+                            <li><a href="#tag-span"><code>&lt;span&gt;</code></a></li>
+                            <li><a href="#tag-strong"><code>&lt;strong&gt;</code></a></li>
+                            <li><a href="#tag-br"><code>&lt;br&gt;</code></a></li>
+                            <li><a href="#tag-h"><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--Тег p-->
+            <p id="tag-p"><code class="code-green">&lt;p&gt;...&lt;/p&gt;</code></p>
+            <p><code class="code-black">&lt;p&gt;</code> используется для добавления текста на сайт. Текст добавленный с помощью тега <code class="code-black">&lt;p&gt;</code>
+                всегда выводиться с новой строки.<br>
+                <code class="code-black">&lt;p&gt;</code> по умолчанию занимает всю доступную ему ширину, а высота будет зависеть от количества текста.
+            </p>
+            <div class="d-flex highlight code-case">
+                <div class="code-case__number">
+                    <p>1</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">&lt;p&gt;</span>Какой-то текст<span class="cp">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <!--Тег span-->
+            <p id="tag-span"><code class="code-green">&lt;span&gt;...&lt;/span&gt;</code></p>
+            <p><code class="code-black">&lt;span&gt;</code> используется для стилизации частей текста.
+                К примеру, если в тексте необходимо выделить одно слово красным цветом,
+                то нужно обернуть его в тег <code class="code-black">&lt;span&gt;</code> и для него писать css стили.
+            </p>
+            <div class="d-flex highlight code-case code-case__full">
+                <div class="code-case__number">
+                    <p>1</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">&lt;p&gt;</span>Чистосердечное <span class="cp">&lt;span</span><span class="code-na"> class=</span><span class="code-s">"text-red"</span><span class="code-nt">&gt;</span>признание<span class="cp">&lt;/span&gt;</span> облегчает душу<span class="cp">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <!--Тег strong-->
+            <p id="tag-strong"><code class="code-green">&lt;strong&gt;...&lt;/strong&gt;</code></p>
+            <p><code class="code-black">&lt;strong&gt;</code> используеться для выделения текста жирным шрифтом.
+            </p>
+            <div class="d-flex highlight code-case code-case__full">
+                <div class="code-case__number">
+                    <p>1</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">&lt;p&gt;</span>Оказывается, обучение кадров - <span class="cp">&lt;strong&gt;</span>приоритетная задача<span class="cp">&lt;/strong&gt;</span><span class="cp">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <div class="code-res">
+                <div class="code-cont">
+                    <div class="code-search">https://devmix.ru</div>
+                    <div class="code-res__vn">
+                        <p>Оказывается, обучение кадров - <strong>приоритетная задача</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!--Тег br-->
+            <p id="tag-br"><code class="code-green">&lt;br&gt;</code></p>
+            <p><code class="code-black">&lt;br&gt;</code> переносит текст на следующую строку.
+            </p>
+            <div class="d-flex highlight code-case code-case__full">
+                <div class="code-case__number">
+                    <p>1</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">&lt;p&gt;</span>Оказывается, <span class="cp">&lt;br&gt;</span>цены на бензин начинают падать, <span class="cp">&lt;br&gt;</span>жизнь прекрасна<span class="cp">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <div class="code-res">
+                <div class="code-cont">
+                    <div class="code-search">https://devmix.ru</div>
+                    <div class="code-res__vn">
+                        <p>Оказывается, <br>цены на бензин начинают падать, <br>жизнь прекрасна</p>
+                    </div>
+                </div>
+            </div>
+            <!--Тег h1 h2 h3 h4 h4 h6-->
+            <p id="tag-h"><code class="code-green">&lt;h1&gt;...&lt;/h1&gt;</code></p>
+            <p>Для определения заголовка используются теги <code class="code-black">&lt;h1&gt;</code> - <code class="code-black">&lt;h6&gt;</code><br>
+                Всего существует шесть тегов заголовков:
+                <code class="code-black">&lt;h1&gt;</code>
+                <code class="code-black">&lt;h2&gt;</code>
+                <code class="code-black">&lt;h3&gt;</code>
+                <code class="code-black">&lt;h4&gt;</code>
+                <code class="code-black">&lt;h5&gt;</code>
+                <code class="code-black">&lt;h6&gt;</code>
+            </p>
+            <p>
+                <code class="code-black">&lt;h1&gt;</code> наиболее важный, должен использоваться для основного заголовка страницы,
+                а затем заголовок <code class="code-black">&lt;h2&gt;</code>,
+                менее важные <code class="code-black">&lt;h3&gt;</code>, и так далее.
+            </p>
+            <div class="d-flex highlight code-case code-case__full">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">&lt;h1&gt;</span>Заголовок первого уровня<span class="cp">&lt;/h1&gt;</span>
+<span class="cp">&lt;h2&gt;</span>Заголовок второго уровня<span class="cp">&lt;/h2&gt;</span>
+<span class="cp">&lt;h3&gt;</span>Заголовок третьего уровня<span class="cp">&lt;/h3&gt;</span>
+<span class="cp">&lt;h4&gt;</span>Заголовок четвертого уровня<span class="cp">&lt;/h4&gt;</span>
+<span class="cp">&lt;h5&gt;</span>Заголовок пятого уровня<span class="cp">&lt;/h5&gt;</span>
+<span class="cp">&lt;h6&gt;</span>Заголовок шестого уровня<span class="cp">&lt;/h6&gt;</span>
+</pre>
+                </div>
+            </div>
+            <div class="code-res">
+                <div class="code-cont">
+                    <div class="code-search">https://devmix.ru</div>
+                    <div class="code-res__vn">
+                        <h1>Заголовок первого уровня</h1>
+                        <h2>Заголовок второго уровня</h2>
+                        <h3>Заголовок третьего уровня</h3>
+                        <h4>Заголовок четвертого уровня</h4>
+                        <h5>Заголовок пятого уровня</h5>
+                        <h6>Заголовок шестого уровня</h6>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer-vn">
+            <small>© Devmix</small>
+        </div>
+    </footer>
+</section>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
