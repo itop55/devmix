@@ -339,12 +339,23 @@
   padding: 0.71rem 1.14rem 1rem 1.14rem;
 }
 
-.code-search {
+.code-search input {
+  width: 100%;
+  outline: none;
   border: 1px solid #cecfd5;
   border-radius: 20px;
   padding: 0 1rem;
   font-size: 0.85rem;
   line-height: 1.5rem;
+  color: #666;
+}
+
+.code-search input:focus,
+.code-search input:active {
+  border-color: #0087cc;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
 }
 
 .code-res {
