@@ -123,15 +123,6 @@
     background: #eaeaed;
     margin: 0 -2.14rem 1.71rem;
     overflow-y: hidden;
-    &::after {
-        content: "";
-        position: absolute;
-        background: linear-gradient(to right,rgba(66,68,78,0),#eaeaed);
-        top: 0;
-        right: 0;
-        width: 2.14rem;
-        height: 100%;
-    }
 }
 .code-nt, .code-case .nc, .code-case .nf, .code-case .no, .code-case .nn, .code-case .cp, .code-case .kd, .code-case .kc {
     color: #ff7b29;
@@ -182,7 +173,61 @@
         }
     }
 }
-
+.code-cont {
+    border: 1px solid #cecfd5;
+    border-radius: 0 10px 10px 10px;
+    padding: 0.71rem 1.14rem 1rem 1.14rem;
+}
+.code-search {
+    border: 1px solid #cecfd5;
+    border-radius: 20px;
+    padding: 0 1rem;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+.code-res {
+    margin-top: 4rem;
+    margin-bottom: 1.71rem;
+    position: relative;
+    &::after {
+        content: url(../img/chrome.svg);
+        display: block;
+        position: absolute;
+        z-index: 4;
+        top: -22px;
+        left: 8px;
+        width: 18px;
+        height: 18px;
+    }
+    &::before {
+        content: "Мой сайт";
+        position: absolute;
+        z-index: 2;
+        top: -29px;
+        left: 0;
+        font-size: .85rem;
+        padding-left: 35px;
+        padding-top: 0.2rem;
+        width: 150px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid #cecfd5;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.code-res__vn {
+    margin-top: 1.3rem;
+}
+.code-res h6 {
+    color: #666;
+    font-size: 0.67rem;
+}
+.content-menu {
+    code {
+        color: inherit;
+    }
+}
 
 @media screen and (min-width: 1670px) {
     .page-content {
