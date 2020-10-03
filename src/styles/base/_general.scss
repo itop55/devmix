@@ -173,10 +173,29 @@ tbody {
     display: flex;
 }
 .mb-0 {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
+}
+.mt-0 {
+    margin-top: 0!important;
+}
+.m-0 {
+    margin: 0!important;
+}
+.mb-1 {
+    margin-bottom: 1rem!important;
+}
+.mb-03 {
+    margin-bottom: 0.3rem!important;
+}
+.my-1 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
 }
 .mx-w90 {
     max-width: 90%;
+}
+.w-auto {
+    width: auto;
 }
 .code-black {
     font-weight: bold;
@@ -188,6 +207,7 @@ tbody {
     border-radius: 5px;
     color: #ffffff;
 }
+
 
 
 @media screen and (min-width: 1400px) {

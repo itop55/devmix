@@ -143,7 +143,7 @@
     }
 }
 .code-case__code {
-    padding: 1.71rem 4.28rem 1.71rem 2.14rem;
+    padding: 1.71rem 1.2rem 1.71rem 1.2rem;
     p {
         margin-bottom: 0;
     }
@@ -233,6 +233,31 @@
 .content-menu {
     code {
         color: inherit;
+    }
+}
+.mx-w300 {
+    max-width: 300px;
+}
+.lesson4-nav {
+    list-style: initial;
+    margin-left: 1rem;
+    a {
+        color: #0087cc;
+        border-bottom: .071rem solid #cecfd5;
+        padding-bottom: .071rem;
+    }
+    li {
+        margin-left: 0;
+        &::before {
+            content: none;
+        }
+    }
+    p {
+        margin-bottom: 0.5rem;
+        &::before {
+            content: "•";
+            padding-right: 6px;
+        }
     }
 }
 
