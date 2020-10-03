@@ -298,7 +298,7 @@
 }
 
 .code-case__code {
-  padding: 1.71rem 4.28rem 1.71rem 2.14rem;
+  padding: 1.71rem 1.2rem 1.71rem 1.2rem;
 }
 
 .code-case__code p {
@@ -403,6 +403,38 @@
 
 .content-menu code {
   color: inherit;
+}
+
+.mx-w300 {
+  max-width: 300px;
+}
+
+.lesson4-nav {
+  list-style: initial;
+  margin-left: 1rem;
+}
+
+.lesson4-nav a {
+  color: #0087cc;
+  border-bottom: .071rem solid #cecfd5;
+  padding-bottom: .071rem;
+}
+
+.lesson4-nav li {
+  margin-left: 0;
+}
+
+.lesson4-nav li::before {
+  content: none;
+}
+
+.lesson4-nav p {
+  margin-bottom: 0.5rem;
+}
+
+.lesson4-nav p::before {
+  content: "•";
+  padding-right: 6px;
 }
 
 .sidebar__logo {
@@ -1067,11 +1099,36 @@ tbody {
 }
 
 .mb-0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-03 {
+  margin-bottom: 0.3rem !important;
+}
+
+.my-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mx-w90 {
   max-width: 90%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .code-black {

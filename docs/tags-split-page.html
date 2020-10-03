@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Devmix - Теги для разбивки HTML страницы</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="yandex-verification" content="27ed8aacfe2489f1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="html-tutorials">
+<div class="html-tutorials-vn">
+    <div class="html-page-case">
+        <aside class="sidebar">
+    <header class="sidebar__header" role="banner">
+        <h1 class="sidebar__logo">
+            <a href="html-tutorials.html">
+                <img src="img/logo.svg" alt="logotip">
+            </a>
+        </h1>
+        <span class="sidebar-nav-btn"></span>
+    </header>
+    <div class="sidebar__content">
+        <div class="sidebar__content-vn">
+            <nav class="sidebar__nav" role="navigation">
+                <ul>
+                    <li class="building-your-first-web-page">
+                        <a href="what-is-html.html">
+                            <strong>Урок 1</strong>
+                            Что такое HTML?
+                        </a>
+                    </li>
+                    <li class="getting-to-know-html">
+                        <a href="html-page-structure.html">
+                            <strong>Урок 2</strong>
+                            Структура HTML страницы
+                        </a>
+                    </li>
+                    <li class="getting-to-know-css">
+                        <a href="tags-for-text.html">
+                            <strong>Урок 3</strong>
+                            Теги для работы с текстом
+                        </a>
+                    </li>
+                    <li class="opening-the-box-model">
+                        <a href="tags-split-page.html">
+                            <strong>Урок 4</strong>
+                            Теги для разбивки HTML страницы
+                        </a>
+                    </li>
+                    <li class="positioning-content">
+                        <a href="#">
+                            <strong>Урок 5</strong>
+                            Позиционирование контента Новое
+                            <span class="label-new">New</span>
+                        </a>
+                    </li>
+                    <li class="working-with-typography">
+                        <a href="#">
+                            <strong>Урок 6</strong>
+                            Работа с типографикой
+                        </a>
+                    </li>
+                    <li class="setting-backgrounds-and-gradients">
+                        <a href="#">
+                            <strong>Урок 7</strong>
+                            Установка фона и градиентов
+                        </a>
+                    </li>
+                    <li class="creating-lists">
+                        <a href="#">
+                            <strong>Урок 8</strong>
+                            Создание списков
+                        </a>
+                    </li>
+                    <li class="adding-media">
+                        <a href="#">
+                            <strong>Урок 9</strong>
+                            Добавление медиа
+                        </a>
+                    </li>
+                    <li class="building-forms">
+                        <a href="#">
+                            <strong>Урок 10</strong>
+                            Строительные формы
+                        </a>
+                    </li>
+                    <li class="organizing-data-with-tables">
+                        <a href="#">
+                            <strong>Урок 11</strong>
+                            Организация данных с помощью таблиц
+                        </a>
+                    </li>
+                    <li class="writing-your-best-code">
+                        <a href="#">
+                            <strong>Урок 12</strong>
+                            Написание вашего лучшего кода
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</aside>
+        <section class="page-content lesson-content">
+    <div class="page-content__case">
+        <section class="page-case">
+            <header class="page-content__header">
+                <h6 class="page-content__lesson">Урок 4</h6>
+                <h1>Теги для разбивки HTML страницы</h1>
+            </header>
+        </section>
+        <article class="lesson pos-rel page-case">
+            <div class="pos-rel">
+                <div class="content-menu">
+                    <nav class="content-menu__nav ">
+                        <h4>В этом уроке <span class="content-menu__nav-number">4</span></h4>
+                        <h6>HTML</h6>
+                        <ul>
+                            <li><a href="#tag-p"><code>&lt;p&gt;</code></a></li>
+                            <li><a href="#tag-span"><code>&lt;span&gt;</code></a></li>
+                            <li><a href="#tag-strong"><code>&lt;strong&gt;</code></a></li>
+                            <li><a href="#tag-br"><code>&lt;br&gt;</code></a></li>
+                            <li><a href="#tag-h"><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <img class="mt-0" src="img/semantic-html5.svg" alt="семантическая структура html">
+            <p>Обычно HTML страница состоит из <strong>четырех</strong> основных частей:</p>
+            <ol class="practice">
+                <li>
+                    <p><code class="code-green">&lt;header&gt;...&lt;/header&gt;</code></p>
+                    <p><strong>Header</strong> - Верхняя часть (шапка сайта). Содержит контент, относящийся ко всем страницам сайта, например меню, логотип, название сайта.</p>
+                    <div class="d-flex highlight code-case m-0">
+                        <div class="code-case__number">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                        </div>
+                        <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;header&gt;</span>
+  <span class="code-nt">&lt;img</span> <span class="code-na">src=</span><span class="code-s">"img/logo.jpg"</span><span class="code-na"> alt=</span><span class="code-s">"Логотип"</span><span class="code-nt">&gt;</span>
+  <span class="code-nt">&lt;h2&gt;</span>Мой первый сайт<span class="code-nt">&lt;/h2&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Учебный портал - HTML/CSS<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;/header&gt;</span>
+</pre>
+                        </div>
+                    </div>
+                    <div class="code-res">
+                        <div class="code-cont">
+                            <div class="code-search">
+                                <input type="search" placeholder="https://devmix.ru">
+                            </div>
+                            <div class="code-res__vn">
+                                <img class="mx-w300 m-0" src="img/logo-border.svg" alt="Логотип">
+                                <h2 class="my-1">Мой первый сайт</h2>
+                                <p>Учебный портал - HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p><code class="code-green">&lt;nav&gt;...&lt;/nav&gt;</code></p>
+                    <p><strong>Sidebar</strong> - Боковое меню. Может быть размещен слева или справа от основного контента. Для создания бокового меню используйте тег <span class="code-black">&lt;nav&gt;</span>...<span class="code-black">&lt;/nav&gt;</span></p>
+                    <p>
+                        <code>&lt;nav&gt;...&lt;/nav&gt;</code> - Используется для создания меню. На странице может быть несколько элементов <span class="code-black">&lt;nav&gt;</span>, например, один для бокового меню в sidebar, а второй для основного меню в header.
+                    </p>
+                    <div class="d-flex highlight code-case m-0">
+                        <div class="code-case__number">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p>6</p>
+                            <p>7</p>
+                            <p>8</p>
+                        </div>
+                        <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;nav&gt;</span>
+  <span class="code-nt">&lt;ul&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span><span class="code-nt">&lt;a</span> <span class="code-na">href=</span><span class="code-s">"news.html"</span><span class="code-nt">&gt;</span>Новости<span class="code-nt">&lt;/a&gt;</span><span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span><span class="code-nt">&lt;a</span> <span class="code-na">href=</span><span class="code-s">"catalog.html"</span><span class="code-nt">&gt;</span>Каталог<span class="code-nt">&lt;/a&gt;</span><span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span><span class="code-nt">&lt;a</span> <span class="code-na">href=</span><span class="code-s">"company.html"</span><span class="code-nt">&gt;</span>О компании<span class="code-nt">&lt;/a&gt;</span><span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span><span class="code-nt">&lt;a</span> <span class="code-na">href=</span><span class="code-s">"contact.html"</span><span class="code-nt">&gt;</span>Контакты<span class="code-nt">&lt;/a&gt;</span><span class="code-nt">&lt;/li&gt;</span>
+  <span class="code-nt">&lt;/ul&gt;</span>
+<span class="code-nt">&lt;/nav&gt;</span>
+</pre>
+                        </div>
+                    </div>
+                    <div class="code-res">
+                        <div class="code-cont">
+                            <div class="code-search">
+                                <input type="search" placeholder="https://devmix.ru">
+                            </div>
+                            <div class="code-res__vn">
+                                <nav class="lesson4-nav">
+                                    <p><a href="#">Новости</a></p>
+                                    <p><a href="#">Каталог</a></p>
+                                    <p><a href="#">О компании</a></p>
+                                    <p><a href="#">Контакты</a></p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p><code class="code-green">&lt;main&gt;...&lt;/main&gt;</code></p>
+                    <p><strong>Main</strong> - Основная часть. Занимает самую большую часть HTML-страницы. Содержит контент, который относится только к данной странице. <strong>main</strong>
+                    в свою очередь делиться на отдельные блоки с помощью тега <code class="code-black">&lt;section&gt;...&lt;/section&gt;</code>
+                    </p>
+                    <p>
+                        <code>&lt;section&gt;...&lt;/section&gt;</code> - используется для создания отдельных блоков в документе, например,
+                        блок новостей, галереи, товаров и т.д.
+                    </p>
+                    <div class="d-flex highlight code-case m-0">
+                        <div class="code-case__number">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p>6</p>
+                            <p>7</p>
+                            <p>8</p>
+                            <p>9</p>
+                            <p>10</p>
+                            <p>11</p>
+                            <p>12</p>
+                            <p>13</p>
+                            <p>14</p>
+                            <p>15</p>
+                            <p>16</p>
+                            <p>17</p>
+                            <p>18</p>
+                        </div>
+                        <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;main&gt;</span>
+  <span class="code-nt">&lt;h1&gt;</span>Main - основной контент!<span class="code-nt">&lt;/h1&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Состоит из отдельных блоков<span class="code-nt">&lt;/p&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Для создания отдельных блоков служит тег <strong>section</strong><span class="code-nt">&lt;/p&gt;</span>
+  <span class="code-nt">&lt;section&gt;</span>
+    <span class="code-nt">&lt;h4&gt;</span>Блок новостей<span class="code-nt">&lt;/h4&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Содержит информацию, которая относится только к новостям<span class="code-nt">&lt;/p&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>К примеру, картинка новости, текст, кнопка на внутренюю страницу новости<span class="code-nt">&lt;/p&gt;</span>
+  <span class="code-nt">&lt;/section&gt;</span>
+  <span class="code-nt">&lt;section&gt;</span>
+    <span class="code-nt">&lt;h4&gt;</span>Галерея<span class="code-nt">&lt;/h4&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Содержит информацию, которая относится только к галерее<span class="code-nt">&lt;/p&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Картинки, описание картинок<span class="code-nt">&lt;/p&gt;</span>
+    <span class="code-nt">&lt;img</span> <span class="code-na">src=</span><span class="code-s">"img/photo_1.png"</span><span class="code-na"> alt=</span><span class="code-s">"архитектура"</span><span class="code-nt">&gt;</span>
+    <span class="code-nt">&lt;img</span> <span class="code-na">src=</span><span class="code-s">"img/photo_2.png"</span><span class="code-na"> alt=</span><span class="code-s">"архитектура"</span><span class="code-nt">&gt;</span>
+    <span class="code-nt">&lt;img</span> <span class="code-na">src=</span><span class="code-s">"img/photo_3.png"</span><span class="code-na"> alt=</span><span class="code-s">"архитектура"</span><span class="code-nt">&gt;</span>
+  <span class="code-nt">&lt;/section&gt;</span>
+<span class="code-nt">&lt;/main&gt;</span>
+</pre>
+                        </div>
+                    </div>
+                    <div class="code-res">
+                        <div class="code-cont">
+                            <div class="code-search">
+                                <input type="search" placeholder="https://devmix.ru">
+                            </div>
+                            <div class="code-res__vn">
+                                <main>
+                                    <h1>Main - основной контент!</h1>
+                                    <p class="mb-03">Состоит из отдельных блоков</p>
+                                    <p>Для создания отдельных блоков служит тег <strong>section</strong></p>
+                                    <section>
+                                        <h4 class="mb-03">Блок новостей</h4>
+                                        <p class="mb-03">Содержит информацию, которая относится только к новостям</p>
+                                        <p>К примеру, картинка новости, текст, кнопка на внутренюю страницу новости</p>
+                                    </section>
+                                    <section>
+                                        <h4 class="mb-03">Галерея</h4>
+                                        <p class="mb-03">Содержит информацию, которая относится только к галерее</p>
+                                        <p class="mb-03">Картинки, описание картинок</p>
+                                        <img class="w-auto" src="img/photo_1.png" alt="архитектура">
+                                        <img class="w-auto" src="img/photo_2.png" alt="архитектура">
+                                        <img class="w-auto" src="img/photo_3.png" alt="архитектура">
+                                    </section>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p><code class="code-green">&lt;footer&gt;...&lt;/footer&gt;</code></p>
+                    <p><strong>Footer</strong> - Нижняя часть сайта(подвал сайта). Содержит контактную информацию, график работы, ссылки на социальные сети, юридическую информацию. Как и шапка сайта, footer так же является общим блоком для всех страниц сайта.</p>
+                    <div class="d-flex highlight code-case m-0">
+                        <div class="code-case__number">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                        </div>
+                        <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;footer&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Адрес: г. Москва, ул. Березовая, д. 28<span class="code-nt">&lt;/p&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Тел.: +7 925 222 55 66<span class="code-nt">&lt;/p&gt;</span>
+  <span class="code-nt">&lt;p&gt;</span>Email: devmix@info.ru<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;/footer&gt;</span>
+</pre>
+                        </div>
+                    </div>
+                    <div class="code-res">
+                        <div class="code-cont">
+                            <div class="code-search">
+                                <input type="search" placeholder="https://devmix.ru">
+                            </div>
+                            <div class="code-res__vn">
+                                <footer>
+                                    <p class="mb-03">Адрес: г. Москва, ул. Березовая, д. 28</p>
+                                    <p class="mb-03">Тел.: +7 925 222 55 66</p>
+                                    <p class="mb-03">Email: devmix@info.ru</p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer-vn">
+            <small>© Devmix</small>
+        </div>
+    </footer>
+</section>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
