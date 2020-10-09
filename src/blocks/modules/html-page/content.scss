@@ -133,6 +133,9 @@
 .code-s, .code-case .sx, .code-case .m, .code-case .s2, .code-case .ss, .code-case .kp, .code-case .s1, .code-case .mh, .code-case .mi {
     color: #2db34a;
 }
+.code-p {
+    color: #9799a7;
+}
 .code-case__number {
     color: #9799a7;
     text-align: right;
@@ -259,6 +262,26 @@
             padding-right: 6px;
         }
     }
+}
+.selector1 * {
+    font-family: "Roboto", sans-serif;
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+.selector2 p {
+    font-size: 20px;
+    color: #ffa500;
+}
+.big-text {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #b45cff;
+}
+#main-menu {
+    list-style: square;
+    color: #c74d00;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1670px) {
