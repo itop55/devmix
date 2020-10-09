@@ -1,0 +1,312 @@
+<section class="page-content lesson-content">
+    <div class="page-content__case">
+        <section class="page-case">
+            <header class="page-content__header">
+                <h6 class="page-content__lesson">Урок 1</h6>
+                <h1>Css селекторы</h1>
+            </header>
+        </section>
+        <article class="lesson pos-rel page-case">
+            <div class="pos-rel">
+                <div class="content-menu">
+                    <nav class="content-menu__nav ">
+                        <h4>В этом уроке <span class="content-menu__nav-number">1</span></h4>
+                        <h6>HTML</h6>
+                        <ul>
+                            <li>
+                                <a href="#universal-selector-css">Универсальный селектор</a>
+                            </li>
+                            <li>
+                                <a href="#element-selector-css">Селектор эелемента</a>
+                            </li>
+                            <li>
+                                <a href="#class-selector-css">Селектор класса</a>
+                            </li>
+                            <li>
+                                <a href="#id-selector-css">Селектор идентификатора</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+<!---------------------------Универсальный селектор----------------------->
+            <p id="universal-selector-css"><span class="circle-num">1</span> <span class="code-green">Универсальный селектор</span> - обозначается звездочкой (<span class="txt-orange txt-bold"> * </span>).
+                Задает одновременно стили <strong>для всех элементов</strong> HTML страницы. Например, общий шрифт, цвет, размер текста, отступы и т.д.
+            </p>
+<!---------------------------CSS----------------------->
+            <h6>CSS</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">*</span> <span class="code-p">{</span>
+    <span class="code-na">font-family</span><span class="code-p">:</span> <span class="code-s">"Roboto"<span class="code-p">,</span> sans-serif</span><span class="code-p">;</span>
+    <span class="code-na">color</span><span class="code-p">:</span> <span class="code-s">blue</span><span class="code-p">;</span>
+    <span class="code-na">padding</span><span class="code-p">:</span> <span class="code-s">0</span><span class="code-p">;</span>
+    <span class="code-na">margin</span><span class="code-p">:</span> <span class="code-s">0</span><span class="code-p">;</span>
+<span class="code-p">}</span>
+</pre>
+                </div>
+            </div>
+<!---------------------------HTML----------------------->
+            <h6>HTML</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;div&gt;</span>
+    <span class="code-nt">&lt;h4&gt;</span>Разработка веб-страниц<span class="code-nt">&lt;/h4&gt;</span>
+    <span class="code-nt">&lt;a</span> <span class="code-na">href=</span><span class="code-s">"/"</span><span class="code-nt">&gt;</span>На главную<span class="code-nt">&lt;/a&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Учебный портал - HTML/CSS<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;/div&gt;</span>
+</pre>
+                </div>
+            </div>
+<!---------------------------Результат----------------------->
+            <h6>Результат</h6>
+            <div class="code-res mt-2">
+                <div class="code-cont">
+                    <div class="code-search">
+                        <input type="search" placeholder="https://devmix.ru">
+                    </div>
+                    <div class="code-res__vn">
+                        <div class="selector1">
+                            <h4>Разработка веб-страниц</h4>
+                            <a style="text-decoration: underline;" href="/">На главную</a>
+                            <p>Учебный портал - HTML/CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------Селектор элемента----------------------->
+            <p id="element-selector-css" class="pt-2"><span class="circle-num">2</span> <span class="code-green">Селектор элемента</span> - <strong>указывает на определенный тег</strong> в вашем HTML-файле
+                ( <span class="txt-orange txt-bold">p</span>, <span class="txt-orange txt-bold">span</span>, <span class="txt-orange txt-bold">div</span>, <span class="txt-orange txt-bold">h2</span>, <span class="txt-orange txt-bold">ul</span> ... ).
+                Выбирает <strong>все элементы</strong>, соответствующие заданному имени тега.
+            </p>
+            <p>
+                Например, следующий код задаст для <strong>всех</strong> элементов <code class="code-black">&lt;p&gt;</code>
+                размер текста <strong>20px</strong> и <strong>оранжевый цвет</strong>.
+            </p>
+            <!---------------------------CSS----------------------->
+            <h6>CSS</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">p</span> <span class="code-p">{</span>
+    <span class="code-na">font-size</span><span class="code-p">:</span> <span class="code-s">20px</span><span class="code-p">;</span>
+    <span class="code-na">color</span><span class="code-p">:</span> <span class="code-s">#ffa500</span><span class="code-p">;</span>
+<span class="code-p">}</span>
+</pre>
+                </div>
+            </div>
+            <!---------------------------HTML----------------------->
+            <h6>HTML</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="code-nt">&lt;p&gt;</span>Глубокий уровень погружения станет частью наших традиций<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;div&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Есть над чем задуматься: зима близко<span class="code-nt">&lt;/p&gt;</span>
+    <span class="code-nt">&lt;p&gt;</span>Да, небо темнеет<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;/div&gt;</span>
+<span class="code-nt">&lt;span&gt;</span>Чистый разум не скован границами<span class="code-nt">&lt;/span&gt;</span>
+<span class="code-nt">&lt;p&gt;</span>Только объемы выросли<span class="code-nt">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <!---------------------------Результат----------------------->
+            <h6>Результат</h6>
+            <div class="code-res mt-2">
+                <div class="code-cont">
+                    <div class="code-search">
+                        <input type="search" placeholder="https://devmix.ru">
+                    </div>
+                    <div class="code-res__vn">
+                        <div class="selector2">
+                            <p class="mb-1">Глубокий уровень погружения станет частью наших традиций</p>
+                            <div>
+                                <p class="mb-1">Есть над чем задуматься: зима близко</p>
+                                <p class="mb-1">Да, небо темнеет</p>
+                            </div>
+                            <span>Чистый разум не скован границами</span>
+                            <p class="mt-1">Только объемы выросли</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------Селектор класса----------------------->
+            <p id="class-selector-css" class="pt-2"><span class="circle-num">3</span> <span class="code-green">Селектор класса</span> - Выбирает <strong>все элементы</strong>, у которых есть данный класс.
+                При стилизации элементов с помощью класса, <strong>в css</strong> перед названием класса необходимо ставить точку ( <span class="txt-orange txt-bold fz-13"> .</span><strong>big-text</strong> )<br>
+            </p>
+            <p>
+                <strong>В HTML-файле класс пишем без точки</strong>
+                <code>&lt;p </code><span class="code-na">class=</span><span class="code-s">"big-text"</span><code>&gt;</code> ... <code>&lt;/p&gt;</code>
+            </p>
+            <!---------------------------CSS----------------------->
+            <h6>CSS</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">.big-text</span> <span class="code-p">{</span>
+    <span class="code-na">text-decoration</span><span class="code-p">:</span> <span class="code-s">underline</span><span class="code-p">;</span>
+    <span class="code-na">text-transform</span><span class="code-p">:</span> <span class="code-s">uppercase</span><span class="code-p">;</span>
+    <span class="code-na">color</span><span class="code-p">:</span> <span class="code-s">#b45cff</span><span class="code-p">;</span>
+<span class="code-p">}</span>
+</pre>
+                </div>
+            </div>
+            <!---------------------------HTML----------------------->
+            <h6>HTML</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<code class="code-nt">&lt;p </code><span class="code-na">class=</span><span class="code-s">"big-text"</span><code class="code-nt">&gt;</code>Главные СМИ предупреждают<code class="code-nt">&lt;/p&gt;</code>
+<span class="code-nt">&lt;div&gt;</span>
+    <code class="code-nt">&lt;span </code><span class="code-na">class=</span><span class="code-s">"big-text"</span><code class="code-nt">&gt;</code>Цены на бензин начинают падать!<code class="code-nt">&lt;/span&gt;</code>
+    <span class="code-nt">&lt;p&gt;</span>Склады ломятся от зерна<span class="code-nt">&lt;/p&gt;</span>
+<span class="code-nt">&lt;/div&gt;</span>
+<span class="code-nt">&lt;p&gt;</span>Может показаться странным, но небо темнеет<span class="code-nt">&lt;/p&gt;</span>
+</pre>
+                </div>
+            </div>
+            <!---------------------------Результат----------------------->
+            <h6>Результат</h6>
+            <div class="code-res mt-2">
+                <div class="code-cont">
+                    <div class="code-search">
+                        <input type="search" placeholder="https://devmix.ru">
+                    </div>
+                    <div class="code-res__vn">
+                        <div>
+                            <p class="big-text mb-1">Главные СМИ предупреждают</p>
+                            <div>
+                                <span class="big-text">Цены на бензин начинают падать!</span>
+                                <p class="mb-1 mt-1">Склады ломятся от зерна</p>
+                            </div>
+                            <p class="mb-1">Может показаться странным, но небо темнеет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------Селектор идентификатора----------------------->
+            <p id="id-selector-css" class="pt-2"><span class="circle-num">4</span> <span class="code-green">Селектор идентификатора (id)</span> - <strong>id</strong> используется для стилизации <strong>одного, уникального</strong> элемента.
+                Значение <strong>id не должно повторяться</strong>, в одном HTML-файле не может быть двух похожих id.
+            </p>
+            <p>При стилизации элементов с помощью id, <strong>в css</strong> перед названием id необходимо ставить знак решетки ( <span class="txt-orange txt-bold"> #</span><strong>main-menu</strong> )<br></p>
+            <p>
+                <strong>В HTML-файле id пишем без решетки</strong>
+                <code>&lt;ul </code><span class="code-na">id=</span><span class="code-s">"main-menu"</span><code>&gt;</code> ... <code>&lt;/ul&gt;</code>
+            </p>
+            <!---------------------------CSS----------------------->
+            <h6>CSS</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<span class="cp">#main-menu</span> <span class="code-p">{</span>
+    <span class="code-na">list-style</span><span class="code-p">:</span> <span class="code-s">square</span><span class="code-p">;</span>
+    <span class="code-na">font-weight</span><span class="code-p">:</span> <span class="code-s">bold</span><span class="code-p">;</span>
+    <span class="code-na">color</span><span class="code-p">:</span> <span class="code-s">#c74d00</span><span class="code-p">;</span>
+<span class="code-p">}</span>
+</pre>
+                </div>
+            </div>
+            <!---------------------------HTML----------------------->
+            <h6>HTML</h6>
+            <div class="d-flex highlight code-case code-mx-w">
+                <div class="code-case__number">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                </div>
+                <div class="code-case__code">
+<pre>
+<code class="code-nt">&lt;ul </code><span class="code-na">id=</span><span class="code-s">"main-menu"</span><code class="code-nt">&gt;</code>
+    <span class="code-nt">&lt;li&gt;</span>Главная<span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span>Каталог<span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span>Новости<span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span>О компании<span class="code-nt">&lt;/li&gt;</span>
+    <span class="code-nt">&lt;li&gt;</span>Контакты<span class="code-nt">&lt;/li&gt;</span>
+<code class="code-nt">&lt;/ul&gt;</code>
+</pre>
+                </div>
+            </div>
+            <!---------------------------Результат----------------------->
+            <h6>Результат</h6>
+            <div class="code-res mt-2">
+                <div class="code-cont">
+                    <div class="code-search">
+                        <input type="search" placeholder="https://devmix.ru">
+                    </div>
+                    <div class="code-res__vn pl-15">
+                        <ul id="main-menu">
+                            <li>Главная</li>
+                            <li>Каталог</li>
+                            <li>Новости</li>
+                            <li>О компании</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer-vn">
+            <small>© Devmix</small>
+        </div>
+    </footer>
+</section>
